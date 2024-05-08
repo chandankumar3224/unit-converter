@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Freeman&family=Poetsen+One&display=swap');
+    body {
+      background-color: rgba(0, 0, 0, 0.852);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .main {
+      height: 500px;
+      width: 500px;
+      background-color: rgb(235, 95, 95); 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+      border-style: none;
+    }
+    
+
+    h1{
+      background-color: white;
+      border-radius: 10px;
+      color: black;
+      font-family: "Poetsen One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-weight: 700;
+      padding: 20px;
+      font-size: 50px;
+    }
+    input {
+      padding: 5px;
+      border-radius: 5px;
+      border-color: rgb(80, 78, 78);
+      width: 200px;
+      height: 20px;
+      font-family: "Freeman", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-style: solid;
+    }
+    select {
+      border-radius: 5px;
+      font-weight: bold;
+      border-color: antiquewhite;
+      height: 25px;
+      width: 150px;
+      font-family: "Freeman", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px;
+      background-color: brown;
+      border-radius: 10px;
+      border-style: none;
+      color: rgb(255, 255, 255);
+      font-size: large;
+      font-style: arial;
+      font-weight: 800;
+      cursor: pointer;
+      font-family: "Freeman", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      transition: all 0.2s;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    button:hover {
+      background-color: blueviolet;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    }
+    button:active {
+      background-color: rgb(107, 31, 177);
+      color: rgb(255, 72, 72);
+    }
+    p {
+      padding: 10px;
+      background-color: white;
+      border-radius: 5px;
+      font-size: large;
+      font-family: "Freeman", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+  <h1>Unit Converter</h1>
+  <div class="second">
+  <input type="number" placeholder="Enter Distance..." id="number">
+  <select id="unit">
+    <option value="milesToKm">Miles to Kilometers</option>
+    <option value="kmToMiles">Kilometers to Miles</option>
+  </select>
+  </div>
+  <button id="converter">CONVERT</button>
+  <p id="result">1km = 1.60934miles</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
